@@ -1,6 +1,6 @@
 # Flappy Bird Game (Flutter && Flame Engine)
 
-![Flappy Bird Game Screenshot](assets/screenshots/flappy_bird_game_screenshot.png)
+<img src="assets/screenshots/flappy_bird_game_screenshot.png" alt="Flappy Bird Game Screenshot" width="200"/>
 
 This is a Flappy Bird game built in Flutter using the Flame engine.
 
