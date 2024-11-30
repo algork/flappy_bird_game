@@ -11,7 +11,7 @@ Follow these instructions to get the game running locally.
 
    `git clone git@github.com:algork/flappy_bird_game.git`
 
-   `cd flappy-bird-clone`
+   `cd flappy_bird_game`
 2. `flutter pub get`
 3. `flutter run`
 
