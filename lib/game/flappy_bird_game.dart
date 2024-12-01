@@ -9,8 +9,8 @@ import 'package:flappy_bird_app/components/score.dart';
 import 'package:flappy_bird_app/constants.dart';
 import 'package:flutter/material.dart';
 
-import 'components/bird.dart';
-import 'components/ground.dart';
+import '../components/bird.dart';
+import '../components/ground.dart';
 
 class FlappyBirdGame extends FlameGame with TapDetector, HasCollisionDetection {
   late Bird bird;

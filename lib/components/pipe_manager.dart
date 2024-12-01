@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flame/components.dart';
 import 'package:flappy_bird_app/constants.dart';
-import 'package:flappy_bird_app/game.dart';
+import 'package:flappy_bird_app/game/flappy_bird_game.dart';
 import 'package:flappy_bird_app/components/pipe.dart';
 
 class PipeManager extends Component with HasGameRef<FlappyBirdGame> {

@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
 
-import '../game.dart';
+import '../game/flappy_bird_game.dart';
 
 class ScoreText extends TextComponent with HasGameRef<FlappyBirdGame> {
   // init
@@ -11,9 +11,10 @@ class ScoreText extends TextComponent with HasGameRef<FlappyBirdGame> {
       : super(
           text: '0',
           textRenderer: TextPaint(
-            style: TextStyle(
-              color: Colors.grey.shade900,
+            style: const TextStyle(
+              color: Colors.white,
               fontSize: 48,
+              fontFamily: 'Game',
             ),
           ),
         );
@@ -25,8 +26,9 @@ class ScoreText extends TextComponent with HasGameRef<FlappyBirdGame> {
     position = Vector2(
       // center horizontally
       (gameRef.size.x - size.x) / 2,
-      // slightly above the bottom
-      gameRef.size.y - size.y - 50,
+      // slightly below the top
+
+      gameRef.size.y * 0.1,
     );
   }
 

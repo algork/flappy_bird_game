@@ -2,10 +2,11 @@ import 'dart:async';
 
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:flappy_bird_app/game.dart';
+import 'package:flappy_bird_app/game/flappy_bird_game.dart';
 import 'package:flappy_bird_app/components/pipe.dart';
 
 import '../constants.dart';
+import '../game/assets.dart';
 import 'ground.dart';
 
 class Bird extends SpriteComponent with CollisionCallbacks {
@@ -26,7 +27,7 @@ class Bird extends SpriteComponent with CollisionCallbacks {
   @override
   FutureOr<void> onLoad() async {
     // load bird sprite
-    sprite = await Sprite.load('bird.png');
+    sprite = await Sprite.load(Assets.bird2);
 
     // add hit box
     add(RectangleHitbox());

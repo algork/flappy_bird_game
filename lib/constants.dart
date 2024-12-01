@@ -14,3 +14,5 @@ const double pipeGap = 200;
 const double minPipeHeight = 50;
 const double pipeWidth = 60;
 const double pipeInterval = 2;
+
+const String mainMenuId = 'main_menu_screen';

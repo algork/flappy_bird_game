@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flame/components.dart';
 
-import '../constants.dart';
+import '../game/assets.dart';
 
 class Background extends SpriteComponent {
   // init background position and size (accept size as a param to know device size)
@@ -15,6 +15,6 @@ class Background extends SpriteComponent {
   @override
   FutureOr<void> onLoad() async {
     // load background sprite image
-    sprite = await Sprite.load('background.png');
+    sprite = await Sprite.load(Assets.background);
   }
 }

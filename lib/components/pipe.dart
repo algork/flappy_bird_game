@@ -3,7 +3,9 @@ import 'dart:async';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flappy_bird_app/constants.dart';
-import 'package:flappy_bird_app/game.dart';
+import 'package:flappy_bird_app/game/flappy_bird_game.dart';
+
+import '../game/assets.dart';
 
 class Pipe extends SpriteComponent with CollisionCallbacks, HasGameRef<FlappyBirdGame> {
   // determine if the pip is top or bottom
@@ -21,7 +23,7 @@ class Pipe extends SpriteComponent with CollisionCallbacks, HasGameRef<FlappyBir
   @override
   FutureOr<void> onLoad() async {
     // load pipe sprite
-    sprite = await Sprite.load(isTopPipe ? 'pipe_top.png' : 'pipe_bottom.png');
+    sprite = await Sprite.load(isTopPipe ? Assets.pipeTop : Assets.pipeBottom);
 
     // add hit box
     add(RectangleHitbox());
